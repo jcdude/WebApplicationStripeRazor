@@ -1,0 +1,15 @@
+﻿@page
+@model WebApplicationStripeRazor.Pages.DashboardModel
+@{
+}
+<form method="post">
+    <input name="CardNumber" placeholder="CardNumber" type="text" />
+    <input name="Cvc" placeholder="Cvc" type="text" />
+    <input name="Month" placeholder="Month" type="text" />
+    <input name="Year" placeholder="Year" type="text" />
+
+    <input name="submit" value="Submit" type="submit" asp-page-handler="Submit"/>
+
+
+</form>
+<input name="Value" placeholder="@Model.subValue" type="text" />
